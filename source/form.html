@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>CAT ENERGY / Подбор программы</title>
+  </head>
+  <body class="page-body">
+    <header class="main-header">
+      <a class="main-header__logo-picture" href="#">
+        <img src="./img/logo-mobile.svg" width="34px" height="38px" alt="cat energy">
+      </a>
+      <a class="main-header__logo-text" href="#">
+        <img src="./img/logo-cat_energy.svg" width="102px" height="18px" alt="cat energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list-link" href="./index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list-link" href="./catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list-link" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <header class="form-header">
+      <h1 class="visually-hidden">Форма для подбора программы</h1>
+      <h2 class="form-header__title">Подбор программы</h2>
+      <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </header>
+      <form class="program-selection-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <section class="pet">
+          <h3 class="visually-hidden">Данные кота</h3>
+          <ul class="pet__list">
+            <li class="pet__item">
+              <label class="pet__label form-label" for="name">Имя:*</label>
+              <input class="pet__field" type="text" id="name" name="name" placeholder="Барсик" required>
+            </li>
+            <li class="pet__item">
+              <label class="pet__label form-label" for="weight">Вес (кг):*</label>
+              <input class="pet__field" type="text" id="weight" name="weight" placeholder="7" required>
+            </li>
+            <li class="pet__item">
+              <label class="pet__label form-label" for="age">Возраст (лет):</label>
+              <input class="pet__field" type="text" id="age" name="age" placeholder="7">
+            </li>
+          </ul>
+        </section>
+        <section class="program-goal">
+          <h3 class="visually-hidden">Цель программы</h3>
+          <ul class="program-goal__list">
+            <li class="program-goal__item">
+              <input class="program-goal__choise" type="radio" name="program type" id="weight-loss" value="weight loss" checked>
+              <label class="program-goal__label" for="weight-loss">Похудение</label>
+            </li>
+            <li class="program-goal-item">
+              <input class="program-goal__choise" type="radio" name="program type" id="weight-gain" value="weight gain">
+              <label class="program-goal__label" for="weight-gain">Набор массы</label>
+            </li>
+            <li class="program-goal-item">
+              <input class="program-goal__choise" type="radio" name="program type" id="need-advice" value="need advice">
+              <label class="program-goal__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </section>
+        <section class="owner-contacts">
+          <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
+          <ul class="owner-contacts__list">
+            <li class="owner-contacts__item">
+              <label class="owner-contacts__label" for="email">E-mail:*</label>
+              <input class="owner-contacts__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li class="owner-contacts__item">
+              <label class="owner-contacts__label" for="phone">Телефон:*</label>
+              <input class="owner-contacts__field" type="tel" id="phone" name="phone number" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </section>
+        <section class="owner-comment">
+          <h3 class="owner-comment__title">Комментарий</h3>
+            <textarea class="owner-comment__field" type="textarea" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </section>
+        <section class="additionally">
+          <h3 class="additionally__title">Дополнительно</h3>
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <input class="additionally__field" type="checkbox" id="sweetener" name="food additives" value="sweetener" checked>
+              <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="additionally__item">
+              <input class="additionally__field" type="checkbox" id="water" name="food additives" value="water">
+              <label class="additionally__label" for="water">Питьевая вода</label>
+            </li>
+            <li class="additionally__item">
+              <input class="additionally__field" type="checkbox" id="milk" name="food additives" value="milk">
+              <label class="additionally__label" for="milk">Молоко</label>
+            </li>
+            <li class="additionally__item">
+              <input class="additionally__field" type="checkbox" id="vitamins" name="food additives" value="vitamins">
+              <label class="additionally__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </section>
+        <button class="program-selection-form button" type="submit">Отправить</button>
+      </form>
+      <p class="spoiler">* — Обязательные поля</p>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__address address">
+            <h2 class="visually-hidden">Адрес компаниии</h2>
+            <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="address__text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+            <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8469.661949143652!2d30.314556599244945!3d59.939208808400736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659259364660!5m2!1sru!2sru" width="320" height="362">
+            </iframe>
+        </div>
+        <div class="main-footer__logo">
+          <a class="main-footer__logo-text" href="#">
+            <img src="./img/logo-cat_energy.svg" width="102px" height="18px" alt="cat energy">
+        </div>
+        <div class="main-footer__social social">
+          <h3 class="visually-hidden">Социальные сети</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Telegram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          <h3 class="visually-hidden">Разработано</h2>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

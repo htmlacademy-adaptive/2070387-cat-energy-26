@@ -35,7 +35,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="form-wrapper">
       <header class="form-header">
       <h1 class="visually-hidden">Форма для подбора программы</h1>
       <h2 class="form-header__title">Подбор программы</h2>
@@ -66,11 +66,11 @@
               <input class="program-goal__choise" type="radio" name="program type" id="weight-loss" value="weight loss" checked>
               <label class="program-goal__label" for="weight-loss">Похудение</label>
             </li>
-            <li class="program-goal-item">
+            <li class="program-goal__item">
               <input class="program-goal__choise" type="radio" name="program type" id="weight-gain" value="weight gain">
               <label class="program-goal__label" for="weight-gain">Набор массы</label>
             </li>
-            <li class="program-goal-item">
+            <li class="program-goal__item">
               <input class="program-goal__choise" type="radio" name="program type" id="need-advice" value="need advice">
               <label class="program-goal__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </li>
@@ -80,11 +80,11 @@
           <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
           <ul class="owner-contacts__list">
             <li class="owner-contacts__item">
-              <label class="owner-contacts__label" for="email">E-mail:*</label>
+              <label class="owner-contacts__label form-label" for="email">E-mail:*</label>
               <input class="owner-contacts__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="owner-contacts__item">
-              <label class="owner-contacts__label" for="phone">Телефон:*</label>
+              <label class="owner-contacts__label form-label" for="phone">Телефон:*</label>
               <input class="owner-contacts__field" type="tel" id="phone" name="phone number" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
@@ -114,7 +114,7 @@
             </li>
           </ul>
         </section>
-        <button class="program-selection-form button" type="submit">Отправить</button>
+        <button class="program-selection-form__button button" type="submit">Отправить</button>
       </form>
       <p class="spoiler">* — Обязательные поля</p>
     </main>

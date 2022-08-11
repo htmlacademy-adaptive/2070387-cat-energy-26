@@ -39,12 +39,69 @@
 }
 
 .program-selection__img {
-  margin: 0;
+  width: 280px;
+  height: 270px;
+  background-image: url(..//..//img/can-mobile.png);
   margin-top: -135px;
-  padding: 0;
-  text-align: center;
 }
 
 .program-selection__button {
   width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    background-image: none;
+    align-items: flex-start;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .program-selection__green-box {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .program-selection__title {
+    color: #000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+    text-align: left;
+    padding: 0;
+    margin-top: 62px;
+    margin-bottom: 42px;
+    margin-left: 88px;
+    order: 1;
+  }
+
+  .program-selection__tagline {
+    color: #000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding: 0;
+    margin-left: 88px;
+    order: 2;
+  }
+  .program-selection__img {
+    width: 710px;
+    height: 610px;
+    background-image: url(..//..//img/can-tablet.png);
+    margin: 0;
+    order: 4;
+  }
+
+  .program-selection__button {
+    margin-top: 48px;
+    margin-left: 88px;
+    width: 244px;
+    order: 3;
+  }
+
+}
+
+ @media (min-width: @desktop-width) {
+
 }

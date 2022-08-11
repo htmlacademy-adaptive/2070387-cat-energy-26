@@ -15,3 +15,45 @@
   width: 24px;
   height: 18px;
 }
+
+.header-box__logo-image {
+  background-color: #ffffff;
+  background-image: url(..//..//img/logo.svg);
+  background-repeat: no-repeat;
+  border: none;
+  width:192px;
+  height: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .header-box {
+    padding: 0;
+    border: none;
+  }
+
+  .header-box__toggle {
+   display: none;
+  }
+
+  .header-box__logo-image {
+    background-image: url(..//..//img/logo-tablet.svg);
+    width: 174px;
+    height: 52px;
+  }
+ }
+
+ @media (min-width: @desktop-width) {
+  .header-box {
+    padding: 0;
+  }
+
+  .header-box__toggle {
+    display: none;
+  }
+
+  .header-box__logo-image {
+    background-image: url(..//..//img/logo-desktop.svg);
+    width: 202px;
+    height: 60px;
+  }
+  }

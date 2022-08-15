@@ -25,3 +25,27 @@
   width: 280px;
   padding: 12px 0;
 }
+
+@media (min-width: @tablet-width) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 148px;
+  }
+
+  .footer-content__logo {
+    border: none;
+    min-width: 128px;
+    padding: 0;
+  }
+
+  .footer-content__social {
+    border: none;
+  }
+
+  .footer-content__copyright {
+    width: 164px;
+    padding: 0;
+  }
+}

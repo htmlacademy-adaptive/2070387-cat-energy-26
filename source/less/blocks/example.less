@@ -45,3 +45,35 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .example {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: 136px 166px 210px;
+    column-gap: 80px;
+  }
+
+  .example__title  {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .example__description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .example__legend {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .example__slider {
+    grid-row: 1/4;
+  }
+
+}

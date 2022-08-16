@@ -26,3 +26,30 @@
   line-height: 14px;
   color: #444444;
 }
+
+
+@media (min-width: @tablet-width) {
+  .additional-card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .additional-card__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 244px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .additional-card__button {
+    width: 244px;
+  }
+}

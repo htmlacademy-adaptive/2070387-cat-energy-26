@@ -1,0 +1,55 @@
+.legend__title {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+}
+
+.legend__information {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.legend__expense {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .legend__wrapper {
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .legend__information {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .legend__title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

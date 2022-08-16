@@ -1,6 +1,6 @@
 .additionally {
   margin: 0;
-  padding: 0 20px 34px;
+  padding-bottom: 34px;
 }
 
 .additionally__title {
@@ -37,4 +37,28 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additionally__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    column-gap: 124px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

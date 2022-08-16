@@ -5,4 +5,23 @@
 
 .main-footer__map {
   border: none;
+  min-height: 362px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__map {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    position: relative;
+  }
+
+  .main-footer__address {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
 }

@@ -78,3 +78,43 @@
   left: 102px;
   top: 6px
 }
+
+@media (min-width: @tablet-width) {
+  .programm-type {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .programm-type__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programm-type__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programm-type__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programm-type {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .programm-type__list {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
+
+  .programm-type__item {
+    margin: 20px;
+  }
+}

@@ -34,3 +34,29 @@
   height: 46px;
   border: 1px solid #CDCDCD;
 }
+
+@media (min-width: @tablet-width) {
+  .owner-contacts {
+    width: 628px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .owner-contacts__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner-contacts {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .owner-contacts__list {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
+}

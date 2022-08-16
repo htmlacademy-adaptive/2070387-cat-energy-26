@@ -23,7 +23,31 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  text-align: center;
+  text-align: start;
   text-transform: uppercase;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .owner-comment {
+    width: 628px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .owner-comment__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .owner-comment__field {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner-comment {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

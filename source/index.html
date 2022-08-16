@@ -3,13 +3,14 @@
   <head>
     <link href="./css/style.css" rel="stylesheet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CAT ENERGY / Главная страница</title>
   </head>
   <body class="page-body">
     <header class="main-header">
       <div class="main-header__box header-box">
         <a class="header-box__logo" href="./index.html">
-          <img src="./img/logo.svg" width="190px" height="38px" alt="cat energy">
+          <div class="header-box__logo-image"></div>
         </a>
         <button class="header-box__toggle" type="button">
           <span class="visually-hidden">Открыть</span>
@@ -46,10 +47,9 @@
             <p class="program-selection__tagline">
               Занялся собой? Займись котом!
             </p>
-            </div>
           </header>
         </div>
-        <img class="program-selection__img" src="./img/cat_energy_chiken.png" width="280" height="270" alt="Кэт энерджи со вкусом курицы">
+        <div class="program-selection__img"></div>
         <a class="program-selection__button button" href="./form.html">Подобрать программу</a>
       </section>
       <section class="programm-type">
@@ -93,15 +93,19 @@
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <div class="example__legend example__legend--weight">
-            <p class="example__legend-title">Снижение веса</p>
-            <p class="example__legend-information">5 кг</p>
+          <div class="example__legend legend">
+                <div class="legend__wrapper">
+                <div class="legend__weight">
+                  <p class="legend__title">Снижение веса</p>
+                  <p class="legend__information">5 кг</p>
+                </div>
+                <div class="legend__time">
+                  <p class="legend__title">Затрачено времени</p>
+                  <p class="legend__information">60 дней</p>
+                </div>
+              </div>
+            <p class="legend__expense">Затраты на питание: 15 000 руб.</p>
           </div>
-          <div class="example__legend  example__legend--time">
-            <p class="example__legend-title">Затрачено времени</p>
-            <p class="example__legend-information">60 дней</p>
-          </div>
-          <p class="example__expense">Затраты на питание: 15 000 руб.</p>
           <div class="example__slider slider">
             <img class="slider__cat-fat" src="./img/cat-fat.png" width="280px" height="232px" alt="Толстый кот">
             <img class="slider__cat-slim slider__cat-slim--hidden" src="./img/cat-skinny.png" width="280px" height="232px" alt="Худой кот">
@@ -119,7 +123,7 @@
           <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
         </div>
-        <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8469.661949143652!2d30.314556599244945!3d59.939208808400736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659259364660!5m2!1sru!2sru" width="320" height="362">
+        <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8469.661949143652!2d30.314556599244945!3d59.939208808400736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659259364660!5m2!1sru!2sru">
         </iframe>
         <section class="main-footer__content footer-content">
           <div class="footer-content__logo">

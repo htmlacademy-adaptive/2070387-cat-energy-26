@@ -10,6 +10,62 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
-  margin: 22px 80px 32px;
+  margin-left: 52px;
   padding: 0;
+}
+
+.program-selection-form__additionally {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.program-selection-form__button {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection-form {
+    width: 628px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  .program-selection-form__additionally {
+    width: 628px;
+    margin: 0 auto;
+  }
+
+  .program-selection-form__selection {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    column-gap: 62px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection-form {
+    width: 1220px;
+    margin: 0 aut0;
+    padding-bottom: 82px;
+  }
+
+  .program-selection-form__questionary {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
+
+  .program-selection-form__additionally {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .program-selection-form__selection {
+    grid-template-columns: 568px 568px;
+    column-gap: 82px;
+  }
+
+  .program-selection-form__button {
+    width: 568px;
+  }
 }

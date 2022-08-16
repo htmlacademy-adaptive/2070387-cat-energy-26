@@ -49,3 +49,47 @@
   background-color: #68B738;
   left: 0px;
 }
+
+@media (min-width: @tablet-width) {
+
+  .instructions {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .instructions__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .instructions__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 154px;
+  }
+
+  .instructions__item {
+    padding: 0;
+    padding-top: 82px;
+  }
+
+  .instructions__item::before {
+    top: 0;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .instructions {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .instructions__list {
+    display: grid;
+    grid-template-columns:  230px 230px 230px 230px;
+    column-gap: 94px;
+  }
+}

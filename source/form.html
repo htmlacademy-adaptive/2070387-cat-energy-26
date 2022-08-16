@@ -43,40 +43,42 @@
       <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
       <form class="program-selection-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <section class="pet">
-          <h3 class="visually-hidden">Данные кота</h3>
-          <ul class="pet__list">
-            <li class="pet__item">
-              <label class="pet__label form-label" for="name">Имя:*</label>
-              <input class="pet__field" type="text" id="name" name="name" placeholder="Барсик" required>
-            </li>
-            <li class="pet__item">
-              <label class="pet__label form-label" for="weight">Вес (кг):*</label>
-              <input class="pet__field" type="text" id="weight" name="weight" placeholder="7" required>
-            </li>
-            <li class="pet__item">
-              <label class="pet__label form-label" for="age">Возраст (лет):</label>
-              <input class="pet__field" type="text" id="age" name="age" placeholder="7">
-            </li>
-          </ul>
-        </section>
-        <section class="program-goal">
-          <h3 class="visually-hidden">Цель программы</h3>
-          <ul class="program-goal__list">
-            <li class="program-goal__item">
-              <input class="program-goal__choise" type="radio" name="program type" id="weight-loss" value="weight loss" checked>
-              <label class="program-goal__label" for="weight-loss">Похудение</label>
-            </li>
-            <li class="program-goal__item">
-              <input class="program-goal__choise" type="radio" name="program type" id="weight-gain" value="weight gain">
-              <label class="program-goal__label" for="weight-gain">Набор массы</label>
-            </li>
-            <li class="program-goal__item">
-              <input class="program-goal__choise" type="radio" name="program type" id="need-advice" value="need advice">
-              <label class="program-goal__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </section>
+        <div class="program-selection-form__questionary">
+          <section class="pet">
+            <h3 class="visually-hidden">Данные кота</h3>
+            <ul class="pet__list">
+              <li class="pet__item">
+                <label class="pet__label form-label" for="name">Имя:*</label>
+                <input class="pet__field" type="text" id="name" name="name" placeholder="Барсик" required>
+              </li>
+              <li class="pet__item">
+                <label class="pet__label form-label" for="weight">Вес (кг):*</label>
+                <input class="pet__field" type="text" id="weight" name="weight" placeholder="7" required>
+              </li>
+              <li class="pet__item">
+                <label class="pet__label form-label" for="age">Возраст (лет):</label>
+                <input class="pet__field" type="text" id="age" name="age" placeholder="7">
+              </li>
+            </ul>
+          </section>
+          <section class="program-goal">
+            <h3 class="visually-hidden">Цель программы</h3>
+            <ul class="program-goal__list">
+              <li class="program-goal__item">
+                <input class="program-goal__choise" type="radio" name="program type" id="weight-loss" value="weight loss" checked>
+                <label class="program-goal__label" for="weight-loss">Похудение</label>
+              </li>
+              <li class="program-goal__item">
+                <input class="program-goal__choise" type="radio" name="program type" id="weight-gain" value="weight gain">
+                <label class="program-goal__label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="program-goal__item">
+                <input class="program-goal__choise" type="radio" name="program type" id="need-advice" value="need advice">
+                <label class="program-goal__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </section>
+        </div>
         <section class="owner-contacts">
           <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
           <ul class="owner-contacts__list">
@@ -94,33 +96,37 @@
           <h3 class="owner-comment__title">Комментарий</h3>
             <textarea class="owner-comment__field" type="textarea" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </section>
-        <section class="additionally">
-          <h3 class="additionally__title">Дополнительно</h3>
-          <ul class="additionally__list">
-            <li class="additionally__item">
-              <input class="additionally__field" type="checkbox" id="sweetener" name="food additives" value="sweetener" checked>
-              <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="additionally__item">
-              <input class="additionally__field" type="checkbox" id="water" name="food additives" value="water">
-              <label class="additionally__label" for="water">Питьевая вода</label>
-            </li>
-            <li class="additionally__item">
-              <input class="additionally__field" type="checkbox" id="milk" name="food additives" value="milk">
-              <label class="additionally__label" for="milk">Молоко</label>
-            </li>
-            <li class="additionally__item">
-              <input class="additionally__field" type="checkbox" id="vitamins" name="food additives" value="vitamins">
-              <label class="additionally__label" for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </section>
-        <button class="program-selection-form__button button" type="submit">Отправить</button>
-        <p class="program-selection-form__spoiler">* — Обязательные поля</p>
+        <div class="program-selection-form__additionally">
+          <section class="additionally">
+            <h3 class="additionally__title">Дополнительно</h3>
+            <ul class="additionally__list">
+              <li class="additionally__item">
+                <input class="additionally__field" type="checkbox" id="sweetener" name="food additives" value="sweetener" checked>
+                <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="additionally__item">
+                <input class="additionally__field" type="checkbox" id="water" name="food additives" value="water">
+                <label class="additionally__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="additionally__item">
+                <input class="additionally__field" type="checkbox" id="milk" name="food additives" value="milk">
+                <label class="additionally__label" for="milk">Молоко</label>
+              </li>
+              <li class="additionally__item">
+                <input class="additionally__field" type="checkbox" id="vitamins" name="food additives" value="vitamins">
+                <label class="additionally__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </section>
+          <div class="program-selection-form__selection">
+            <button class="program-selection-form__button button" type="submit">Отправить</button>
+            <p class="program-selection-form__spoiler">* — Обязательные поля</p>
+          </div>
+        </div>
       </form>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__address address">
+      <div class="main-footer__address address address--grey">
         <h2 class="visually-hidden">Адрес компаниии</h2>
         <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
         <address class="address__text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>

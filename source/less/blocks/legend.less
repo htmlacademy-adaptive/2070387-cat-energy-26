@@ -29,6 +29,23 @@
   color: #000000;
 }
 
+@media (max-width: @mobile-width-only) {
+  .legend__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .legend__weight, .legend__time {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .legend__title {
+    max-width: 80px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .legend {
     display: flex;

@@ -13,14 +13,49 @@
   border: none;
   width: 100%;
   cursor: pointer;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.button:hover {
+  background-color: #5EAA2F;
+  color: #FFFFFF;
+}
+
+.button:focus {
+  background-color: #5EAA2F;
+  color: #FFFFFF;
+}
+
+.button:active {
+  background-color: #5EAA2F;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .button--disebled {
-font-size: 16px;
-line-height: 20px;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-color: #444444;
-background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.button--disebled:hover {
+  background-color: #EBEBEB;
+  color: #444444;
+}
+
+.button--disebled:focus {
+  background-color: #EBEBEB;
+  color: #444444;
+}
+
+.button--disebled:active {
+  background-color: #EBEBEB;;
+  color: #444444;
+  opacity: 0.3;
 }

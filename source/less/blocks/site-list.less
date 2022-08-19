@@ -57,6 +57,19 @@
     padding-bottom: 8px;
   }
 
+  .site-list__link:hover {
+    opacity: 0.6;
+  }
+
+  .site-list__link:focus {
+    opacity: 0.6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
+    border-bottom: 2px solid #68B738;
+  }
+
   .site-list__link--current {
     border-bottom: 2px solid #68B738;
   }
@@ -80,5 +93,10 @@
 
   .site-list__link--index {
     color: #ffffff;
+  }
+
+  .site-list__link--index:active {
+    opacity: 0.3;
+    border-bottom: 2px solid #ffffff;
   }
 }

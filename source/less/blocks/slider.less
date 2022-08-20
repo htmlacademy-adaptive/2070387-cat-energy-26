@@ -2,32 +2,32 @@
   display: none;
 }
 
-.slider__button {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  border: none;
-  background-color: #EAEAEA;
-}
-
-.slider__button-kit {
-  margin: 0;
-  padding: o;
-  text-align: center;
-}
-
 @media (min-width: @tablet-width) {
   .slider {
     background-color: #EAEAEA;
+    text-align: center;
+    width: 768px;
+    margin-left: -30px;
   }
 
   .slider__cat-fat {
     margin: 0 auto;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .slider {
+    position: absolute;
+    content: "";
+    background-color: rgba(104, 183, 56, 0);
+    text-align: center;
+    width: 560px;
+    height: 512px;
+    margin: 0;
+    left: 660px;
+  }
+
+  .slider__cat-fat {
+    margin: 0 auto;
+  }
 }

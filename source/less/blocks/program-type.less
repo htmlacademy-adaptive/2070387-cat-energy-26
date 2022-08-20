@@ -105,7 +105,6 @@
   }
 
   .programm-type__title::before {
-    border-radius: 50%;
     width: 200px;
     height: 200px;
     left: 394px;
@@ -133,6 +132,7 @@
   .programm-type {
     width: 1220px;
     margin: 0 auto;
+    margin-bottom: 70px;
     padding: 0;
   }
 
@@ -143,7 +143,28 @@
   }
 
   .programm-type__item {
-    margin: 20px;
-    padding: 78px 52px 58px 52px;
+    padding: 76px 52px 60px 52px;
+  }
+
+  .programm-type__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 72px;
+    margin-left: 162px;
+  }
+
+  .programm-type__description {
+    margin-bottom: 28px;
+  }
+
+  .programm-type__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .programm-type__title::before {
+    width: 100px;
+    height: 100px;
+    left: -162px;
+    top: -31px;
   }
 }

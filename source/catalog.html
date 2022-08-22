@@ -8,28 +8,28 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="main-header__box header-box">
+      <div class="main-header__box header-box main-nav--closed">
         <a class="header-box__logo" href="./index.html">
           <div class="header-box__logo-image"></div>
         </a>
-        <button class="header-box__toggle" type="button">
+      </div>
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть</span>
         </button>
-      </div>
-      <nav class="main-header__nav main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list-link" href="./index.html">
+          <li class="site-list__item">
+            <a class="site-list__link" href="./index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list-link" href="#">
+          <li class="site-list__item site-list__item--green">
+            <a class="site-list__link site-list__link--current" href="#">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list-link" href="./form.html">
+            <a class="site-list__link" href="./form.html">
               Подбор программы
             </a>
           </li>
@@ -207,32 +207,40 @@
             <div class="additional-goods_card additional-card">
               <div class="additional-card__wrapper">
                 <h3 class="additional-card__title">Сахарозаменитель</h3>
-                <p class="additional-card__feature">1 упаковка (100 г)</p>
-                <p class="additional-card__value">200 Р.</p>
+                <div class="additional-card__description">
+                  <p class="additional-card__feature">1 упаковка (100 г)</p>
+                  <p class="additional-card__value">200 Р.</p>
+                </div>
               </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </div>
             <div class="additional-goods_card additional-card">
               <div class="additional-card__wrapper">
                 <h3 class="additional-card__title">Питьевая вода</h3>
-                <p class="additional-card__feature">5 литров</p>
-                <p class="additional-card__value">50 Р.</p>
+                <div class="additional-card__description">
+                  <p class="additional-card__feature">5 литров</p>
+                  <p class="additional-card__value">50 Р.</p>
+                </div>
               </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </div>
             <div class="additional-goods_card additional-card">
               <div class="additional-card__wrapper">
                 <h3 class="additional-card__title">Молоко</h3>
-                <p class="additional-card__feature">1 литр</p>
-                <p class="additional-card__value">100 Р.</p>
+                <div class="additional-card__description">
+                  <p class="additional-card__feature">1 литр</p>
+                  <p class="additional-card__value">100 Р.</p>
+                </div>
               </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </div>
             <div class="additional-goods_card additional-card">
               <div class="additional-card__wrapper">
                 <h3 class="additional-card__title">Витамины</h3>
-                <p class="additional-card__feature">1 упаковка (30 г)</p>
-                <p class="additional-card__value">300 Р.</p>
+                <div class="additional-card__description">
+                  <p class="additional-card__feature">1 упаковка (30 г)</p>
+                  <p class="additional-card__value">300 Р.</p>
+                </div>
               </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </div>
@@ -299,5 +307,6 @@
         </div>
       </section>
   </footer>
+  <script src="./script.js"></script>
   </body>
 </html>

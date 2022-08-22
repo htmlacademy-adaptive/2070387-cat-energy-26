@@ -38,6 +38,7 @@
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 62px;
   }
 
   .example__description {
@@ -48,32 +49,31 @@
 
 @media (min-width: @desktop-width) {
   .example {
+    position: relative;
     width: 1220px;
     margin: 0 auto;
     padding: 0;
-    display: grid;
-    grid-template-columns: 570px 570px;
-    grid-template-rows: 136px 166px 210px;
-    column-gap: 80px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .example__wrapper {
+    background-color: #F2F2F2;
+    width: 1440px;
+    margin-left: -110px;
+    padding-left: 110px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 74px;
   }
 
   .example__title  {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    margin-bottom: 76px;
   }
 
   .example__description {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    width: 436px;
+    margin-bottom: 70px;
   }
-
-  .example__legend {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .example__slider {
-    grid-row: 1/4;
-  }
-
 }

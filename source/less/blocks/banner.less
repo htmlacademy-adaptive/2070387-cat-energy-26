@@ -1,7 +1,12 @@
 .banner {
-  background-image: url(..//img/cat-carrier.jpg);
+  background-image: url("..//img/cat-carrier.jpg");
   width: 280px;
   height: 290px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("..//..//img/cat-carrier@2x.png");
+    background-size: 280px auto;
+  }
 }
 
 .banner__wrapper {
@@ -11,21 +16,27 @@
 }
 
 .banner__title {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .banner {
-    background-image: url(..//img/cat-carrier.jpg);
+    background-image: url("..//..//img/cat-carrier-tablet.png");
     width: 708px;
     height: 200px;
     background-repeat: no-repeat;
+    background-size: 708px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/cat-carrier-tablet@2x.png");
+      background-size: 708px auto;
+    }
   }
 
   .banner__wrapper {
@@ -43,8 +54,16 @@
 
 @media (min-width: @desktop-width) {
   .banner {
+    background-image: url("..//..//img/cat-carrier-desktop.png");
     width: 246px;
     height: 290px;
+    background-repeat: no-repeat;
+    background-size: 246px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/cat-carrier-desktop@2x.png");
+      background-size: 246px auto;
+    }
   }
 
   .banner__wrapper {

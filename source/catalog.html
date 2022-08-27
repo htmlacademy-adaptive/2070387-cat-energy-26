@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CAT ENERGY / Каталог</title>
@@ -10,7 +11,11 @@
     <header class="main-header">
       <div class="main-header__box header-box main-nav--closed">
         <a class="header-box__logo" href="./index.html">
-          <div class="header-box__logo-image"></div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header-box__logo-image" src="img/logo.svg" width="192" height="38" alt="Cat Energy">
+          </picture>
         </a>
       </div>
       <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -41,158 +46,214 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog-wrapper">
           <div class="catalog__card card">
-            <h3 class="card__title">
-              <a class="card__link" href="#">Cat Energy PRO 500 г</a>
-            </h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/chiken-energy-500.png" width="68px" height="86px" alt="Cat Energy PRO курица 500 г">
-            </a>
-            <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">500г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Курица</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">700 Р</td>
-              </tr>
-            </table>
-            <a class="card__button button" href="#">Заказать</a>
-          </div>
-          <div class="catalog__card card">
-            <h3 class="card__title">
-            <a class="card__link" href="#">Cat Energy PRO 1000 г</a></h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/chiken-energy-1000.png" width="84px" height="102px" alt="Cat Energy PRO курица 1000 г">
-            </a>
+            <div class="card__container">
+              <h3 class="card__title">
+                <a class="card__link" href="#">Cat Energy PRO 500 г</a>
+              </h3>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/chiken-energy-500-tablet.png 1x,
+                          img/catalog/tablet/chiken-energy-500-tablet@2x.png 2x">
+                  <img class="card__image" src="img/catalog/chiken-energy-500.png" width="68" height="86"
+                  srcset="./img/catalog/chiken-energy-500@2x.png 2x" alt="Cat Energy PRO курица 500 г">
+                </picture>
+              </a>
               <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">1000г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Курица</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">1000 Р</td>
-              </tr>
-            </table>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">500г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Курица</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">700 Р</td>
+                </tr>
+              </table>
+            </div>
             <a class="card__button button" href="#">Заказать</a>
           </div>
           <div class="catalog__card card">
-            <h3 class="card__title">
-            <a class="card__link" href="#">Cat Energy PRO 500 г</a></h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/fish-energy-500.png" width="68px" height="86px" alt="Cat Energy PRO рыба 500 г">
-            </a>
-              <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">500г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Рыба</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">700 Р</td>
-              </tr>
-            </table>
-            <a class="card__button button" href="#">Заказать</a>
-          </div>
-          <div class="catalog__card card">
-            <h3 class="card__title">
+            <div class="card__container">
+              <h3 class="card__title">
               <a class="card__link" href="#">Cat Energy PRO 1000 г</a></h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/fish-energy-1000.png" width="84px" height="102px" alt="Cat Energy PRO рыба 1000 г">
-            </a>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/chiken-energy-1000-tablet.png 1x,
+                          img/catalog/tablet/chiken-energy-1000-tablet@2x.png 2x">
+                  <img class="card__image card__image--big" src="img/catalog/chiken-energy-1000.png" width="84" height="102"
+                  srcset="./img/catalog/chiken-energy-1000@2x.png 2x" alt="Cat Energy PRO курица 1000 г">
+                </picture>
+              </a>
               <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">1000г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Рыба</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">1000 Р</td>
-              </tr>
-            </table>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">1000г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Курица</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">1000 Р</td>
+                </tr>
+              </table>
+            </div>
             <a class="card__button button" href="#">Заказать</a>
           </div>
           <div class="catalog__card card">
-            <h3 class="card__title">
+            <div class="card__container">
+              <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy PRO 500 г</a></h3>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/fish-energy-500-tablet.png 1x,
+                          img/catalog/tablet/fish-energy-500-tablet@2x.png 2x">
+                  <img class="card__image" src="img/catalog/fish-energy-500.png" width="68" height="86"
+                  srcset="./img/catalog/fish-energy-500@2x.png 2x" alt="Cat Energy PRO рыба 500 г">
+                </picture>
+              </a>
+              <table class="card__list product-description">
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">500г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Рыба</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">700 Р</td>
+                </tr>
+              </table>
+            </div>
+            <a class="card__button button" href="#">Заказать</a>
+          </div>
+          <div class="catalog__card card">
+            <div class="card__container">
+              <h3 class="card__title">
+                <a class="card__link" href="#">Cat Energy PRO 1000 г</a></h3>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/fish-energy-1000-tablet.png 1x,
+                          img/catalog/tablet/fish-energy-1000-tablet@2x.png 2x">
+                  <img class="card__image card__image--big" src="img/catalog/fish-energy-1000.png" width="84" height="102"
+                  srcset="./img/catalog/fish-energy-1000@2x.png 2x" alt="Cat Energy PRO рыба 1000 г">
+                </picture>
+              </a>
+              <table class="card__list product-description">
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">1000г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Рыба</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">1000 Р</td>
+                </tr>
+              </table>
+            </div>
+            <a class="card__button button" href="#">Заказать</a>
+          </div>
+          <div class="catalog__card card">
+            <div class="card__container">
+              <h3 class="card__title">
+                <a class="card__link" href="#">Cat Energy slim 500 г</a></h3>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/buckwheat-energy-500-tablet.png 1x,
+                          img/catalog/tablet/buckwheat-energy-500-tablet@2x.png 2x">
+                  <img class="card__image" src="img/catalog/buckwheat-energy-500.png" width="68" height="86"
+                  srcset="./img/catalog/buckwheat-energy-500@2x.png 2x" alt="Cat Energy Slim гречка 500 г">
+                </picture>
+              </a>
+              <table class="card__list product-description">
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">500г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Гречка</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">400 Р</td>
+                </tr>
+              </table>
+            </div>
+            <a class="card__button button" href="#">Заказать</a>
+          </div>
+          <div class="catalog__card card">
+            <div class="card__container">
+              <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy slim 1000 г</a></h3>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/buckwheat-energy-1000-tablet.png 1x,
+                          img/catalog/tablet/buckwheat-energy-1000-tablet@2x.png 2x">
+                  <img class="card__image card__image--big" src="img/catalog/buckwheat-energy-1000.png" width="68" height="86"
+                  srcset="./img/catalog/buckwheat-energy-1000@2x.png 2x" alt="Cat Energy Slim гречка 1000 г">
+                </picture>
+              </a>
+              <table class="card__list product-description">
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">1000г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Гречка</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">700 Р</td>
+                </tr>
+              </table>
+            </div>
+            <a class="card__button button" href="#">Заказать</a>
+          </div>
+          <div class="catalog__card card">
+            <div class="card__container">
+              <h3 class="card__title">
               <a class="card__link" href="#">Cat Energy slim 500 г</a></h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/buckwheat-energy-500.png" width="68px" height="86px" alt="Cat Energy Slim гречка 500 г">
-            </a>
+              <a class="card__link--image" href="#">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/rice-energy-500-tablet.png 1x,
+                          img/catalog/tablet/rice-energy-500-tablet@2x.png 2x">
+                  <img class="card__image" src="img/catalog/rice-energy-500.png" width="68" height="86"
+                  srcset="./img/catalog/rice-energy-500@2x.png 2x" alt="Cat Energy Slin рис 500 г">
+                </picture>
+              </a>
               <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">500г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Гречка</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">400 Р</td>
-              </tr>
-            </table>
-            <a class="card__button button" href="#">Заказать</a>
-          </div>
-          <div class="catalog__card card">
-            <h3 class="card__title">
-            <a class="card__link" href="#">Cat Energy slim 1000 г</a></h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/chiken-energy-500.png" width="68px" height="86px" alt="Cat Energy Slim гречка 1000 г">
-            </a>
-              <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">1000г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Гречка</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">700 Р</td>
-              </tr>
-            </table>
-            <a class="card__button button" href="#">Заказать</a>
-          </div>
-          <div class="catalog__card card">
-            <h3 class="card__title">
-            <a class="card__link" href="#">Cat Energy slim 500 г</a></h3>
-            <a class="card__link--image" href="#">
-              <img class="card__image" src="./img/catalog/rice-energy-500.png" width="68px" height="86px" alt="Cat Energy Slin рис 500 г">
-            </a>
-            <table class="card__list product-description">
-              <tr class="product-description__row">
-                <td class="product-description__feature">Масса</td>
-                <td class="product-description__value">500г</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Вкус</td>
-                <td class="product-description__value">Рис</td>
-              </tr>
-              <tr class="product-description__row">
-                <td class="product-description__feature">Цена</td>
-                <td class="product-description__value">500 Р</td>
-              </tr>
-            </table>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Масса</td>
+                  <td class="product-description__value">500г</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Вкус</td>
+                  <td class="product-description__value">Рис</td>
+                </tr>
+                <tr class="product-description__row">
+                  <td class="product-description__feature">Цена</td>
+                  <td class="product-description__value">500 Р</td>
+                </tr>
+              </table>
+            </div>
             <a class="card__button button" href="#">Заказать</a>
           </div>
           <div class="catalog__card card-addition">

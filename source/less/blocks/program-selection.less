@@ -1,10 +1,15 @@
 .program-selection {
   background-color: #ffffff;
-  background-image: url(..//img/licking-cat.jpg);
+  background-image: url("..//..//img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("..//..//img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .program-selection__green-box {
@@ -14,7 +19,7 @@
 }
 
 .program-selection__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -26,7 +31,7 @@
 }
 
 .program-selection__tagline {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -41,10 +46,15 @@
 .program-selection__img {
   width: 280px;
   height: 270px;
-  background-image: url(..//..//img/can-mobile.png);
+  background-image: url("..//..//img/can-mobile.png");
   margin-top: -135px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("..//..//img/can-mobile@2x.png");
+    background-size: 280px auto;
+  }
 }
 
 .program-selection__button {
@@ -66,7 +76,7 @@
   }
 
   .program-selection__title {
-    color: #000;
+    color: #000000;
     font-size: 60px;
     line-height: 60px;
     width: 416px;
@@ -79,7 +89,7 @@
   }
 
   .program-selection__tagline {
-    color: #000;
+    color: #000000;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -87,13 +97,19 @@
     margin-left: 88px;
     order: 2;
   }
+
   .program-selection__img {
     width: 710px;
     height: 610px;
-    background-image: url(..//..//img/can-tablet.png);
+    background-image: url("..//..//img/can-tablet.png");
     margin: 0;
     margin-top: -78px;
     order: 4;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/can-tablet@2x.png");
+      background-size: 710px auto;
+    }
   }
 
   .program-selection__button {
@@ -103,10 +119,9 @@
     order: 3;
     z-index: 1;
   }
-
 }
 
- @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .program-selection {
     width: 1440px;
     position: relative;
@@ -124,11 +139,18 @@
     background-image: linear-gradient(
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)),
-      url(..//..//img/index-background-desktop.jpg);
+      url("..//..//img/index-background-desktop.jpg");
     z-index: -1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)),
+        url("..//..//img/index-background-desktop@2x.png");
+    }
   }
 
   .program-selection__title {
@@ -138,6 +160,7 @@
   .program-selection__tagline {
     margin-left: 190px;
   }
+
   .program-selection__button {
     margin-left: 190px;
   }
@@ -145,9 +168,14 @@
   .program-selection__img {
     width: 552px;
     height: 500px;
-    background-image: url(..//..//img/can-desktop.png);
+    background-image: url("..//..//img/can-desktop.png");
     position: absolute;
     left: 600px;
     margin-top: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/can-desktop@2x.png");
+      background-size: 552px auto;
+    }
   }
 }

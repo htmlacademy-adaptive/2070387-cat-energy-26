@@ -11,7 +11,11 @@
     <header class="main-header">
       <div class="main-header__box header-box main-nav--closed">
         <a class="header-box__logo" href="./index.html">
-          <div class="header-box__logo-image"></div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header-box__logo-image" src="img/logo.svg" width="192" height="38" alt="Cat Energy">
+          </picture>
         </a>
       </div>
       <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">

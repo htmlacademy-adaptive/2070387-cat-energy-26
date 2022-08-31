@@ -6,15 +6,23 @@
   line-height: 18px;
   color: #444444;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+
+.copyright__logo {
+  fill: #666666;
 }
 
 
 .copyright__link:hover {
-  opacity: 0.8;
-  fill: #68b738;
+  .copyright__logo {
+    fill: #68b738;
+  }
 }
 
 .copyright__link:active {
-  opacity: 0.6;
-  fill: #68b738;
+  opacity: 0.3;
 }

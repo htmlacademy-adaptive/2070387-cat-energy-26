@@ -2,11 +2,22 @@
   background-image: url("..//img/cat-carrier.jpg");
   width: 280px;
   height: 290px;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("..//..//img/cat-carrier@2x.png");
     background-size: 280px auto;
   }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background-image: url("..//..//img/gift.svg");
+  width: 78px;
+  height: 80px;
+  left: 102px;
+  top: 60px;
 }
 
 .banner__wrapper {
@@ -39,6 +50,11 @@
     }
   }
 
+  .banner::before {
+    left: 78px;
+    top: 58px;
+  }
+
   .banner__wrapper {
     background-color: rgba(104, 183, 56, 0.85);
     height: 200px;
@@ -56,14 +72,20 @@
   .banner {
     background-image: url("..//..//img/cat-carrier-desktop.png");
     width: 246px;
-    height: 290px;
+    height: 288px;
     background-repeat: no-repeat;
     background-size: 246px auto;
+    margin: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("..//..//img/cat-carrier-desktop@2x.png");
       background-size: 246px auto;
     }
+  }
+
+  .banner::before {
+    left: 84px;
+    top: 56px;
   }
 
   .banner__wrapper {
@@ -73,7 +95,8 @@
   }
 
   .banner__title {
-    padding: 0;
+    padding: 184px 42px 42px 42px;
+    margin: 0;
     text-align: center;
   }
 }

@@ -24,6 +24,13 @@
   color: #444444;
 }
 
+.instructions__description--first,
+.instructions__description--second,
+.instructions__description--third,
+.instructions__description--fourth  {
+  display: none;
+}
+
 .instructions__list {
   list-style-type: none;
   margin: 0;
@@ -48,6 +55,50 @@
   height: 60px;
   background-color: #68b738;
   left: 0;
+}
+
+.instructions__item--leaf::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 28px;
+  background-image: url("..//..//img/leaf.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 18px;
+}
+
+.instructions__item--boiling::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-image: url("..//..//img/boiling.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 15px;
+}
+
+.instructions__item--cutlery::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 30px;
+  background-image: url("..//..//img/cutlery.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 18px;
+}
+
+.instructions__item--scales::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 33px;
+  background-image: url("..//..//img/scales.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 18px;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,6 +128,29 @@
     top: 0;
   }
 
+  .instructions__description {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .instructions__description--first,
+  .instructions__description--second,
+  .instructions__description--third,
+  .instructions__description--fourth {
+    display: block;
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    top: -40px;
+    right: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {

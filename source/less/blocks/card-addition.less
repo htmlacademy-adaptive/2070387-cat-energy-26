@@ -1,4 +1,5 @@
 .card-addition {
+  position: relative;
   display: grid;
   margin: 0;
   padding: 78px 20px 24px 20px;
@@ -7,7 +8,6 @@
 }
 
 .card-addition__title {
-  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -21,14 +21,14 @@
   padding-bottom: 8px;
 }
 
-.card-addition__title::before {
+.card-addition::before {
   content: "";
   position: absolute;
   background-image: url("..//img/plus.svg");
   width: 30px;
   height: 30px;
-  top: -54px;
-  left: 122px;
+  top: 25px;
+  left: 145px;
 }
 
 .card-addition__description {
@@ -48,5 +48,33 @@
   .card-addition {
     border: 1px solid #ebebeb;
     padding: 162px 38px 38px 38px;
+  }
+
+  .card-addition__title {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 22px;
+  }
+
+  .card-addition__description {
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 88px;
+  }
+
+  .card-addition::before {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    left: 132px;
+    top: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-addition::before {
+    left: 92px;
+    top: 52px;
   }
 }

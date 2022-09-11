@@ -8,6 +8,7 @@
   position: absolute;
   content: "";
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .site-list__item {
@@ -26,12 +27,6 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-}
-
-@media (max-width: @mobile-width-only) {
-  .main-nav--nojs .site-list {
-    position: static;
-  }
 }
 
 @media (min-width: @tablet-width) {

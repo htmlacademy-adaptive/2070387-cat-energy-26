@@ -23,6 +23,7 @@
   padding: 0;
   display: flex;
   align-items: center;
+  padding-left: 54px;
 }
 
 .additionally__item:not(:last-child) {
@@ -37,6 +38,39 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+}
+
+.additionally__mark {
+  width: 30px;
+  height: 30px;
+  outline: 1px solid #cdcdcd;
+  position: absolute;
+  left: -56px;
+  top: -6px;
+}
+
+.additionally__label:hover .additionally__mark {
+  outline: 1px solid #bababa;
+}
+
+.additionally__field:disabled + .additionally__mark {
+  outline: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.additionally__mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  top: 8px;
+  left: 6px;
+}
+
+.additionally__field[type="checkbox"]:checked + .additionally__mark::before {
+  background-image: url("..//..//img/check-mark.svg");
+  background-color: #000000;
 }
 
 @media (min-width: @tablet-width) {
@@ -54,6 +88,10 @@
     display: grid;
     grid-template-columns: 220px 220px;
     column-gap: 124px;
+  }
+
+  .additionally__item:not(:last-child) {
+    padding-bottom: 0;
   }
 }
 

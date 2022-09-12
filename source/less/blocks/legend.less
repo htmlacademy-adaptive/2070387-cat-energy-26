@@ -6,6 +6,11 @@
   line-height: 12px;
   text-align: center;
   color: #444444;
+  position: absolute;
+  width: 88px;
+  background-color: #eaeaea;
+  top: 56px;
+  left: 22px;
 }
 
 .legend__information {
@@ -16,6 +21,11 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  outline: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  height: 42px;
+  padding-top: 14px;
 }
 
 .legend__expense {
@@ -31,9 +41,7 @@
 
 .legend__weight,
 .legend__time {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
+  position: relative;
 }
 
 @media (max-width: @mobile-width-only) {

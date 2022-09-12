@@ -18,10 +18,45 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  position: relative;
+  padding-left: 46px;
 }
 
 .program-goal__item:not(:last-child) {
   padding-bottom: 24px;
+}
+
+.program-goal__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: 1px solid #cdcdcd;
+  left: 0;
+  top: -2px;
+}
+
+.program-goal__label:hover .program-goal__mark {
+  outline: 1px solid #bababa;
+}
+
+.program-goal__choise:disabled + .program-goal__mark {
+  outline: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.program-goal__mark::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
+}
+
+.program-goal__choise[type="radio"]:checked + .program-goal__mark::before {
+  background-color: #68b738;
 }
 
 @media (min-width: @tablet-width) {

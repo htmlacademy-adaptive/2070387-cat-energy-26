@@ -1,5 +1,5 @@
 .legend__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -72,20 +72,29 @@
   .legend__information {
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
+    padding-bottom: 20px;
+    height: 38px;
   }
 
   .legend__title {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    width: 130px;
+    top: 80px;
+    left: 18px;
   }
 
   .legend__expense {
-    width: 134px;
+    font-size: 20px;
+    width: 172px;
     text-align: right;
   }
+
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .legend {
     flex-direction: column;
     width: 366px;
@@ -95,5 +104,9 @@
   .legend__expense {
     width: 328px;
     text-align: center;
+  }
+
+  .legend__title {
+    background-color: #eaeaea;
   }
 }

@@ -59,6 +59,10 @@
   outline: 2px solid #444444;
 }
 
+.owner-contacts__field:focus + svg {
+  fill: #68b738;
+}
+
 .owner-contacts__label {
   white-space: nowrap;
   margin-right: 14px;
@@ -80,14 +84,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  .owner-contacts__email {
-    right: 16px;
-  }
-
-  .owner-contacts__phone {
-    right: 16px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -104,13 +100,5 @@
 
   .owner-contacts__item:not(:last-child) {
     padding-bottom: 0;
-  }
-
-  .owner-contacts__email {
-    right: 16px;
-  }
-
-  .owner-contacts__phone {
-    right: 16px;
   }
 }

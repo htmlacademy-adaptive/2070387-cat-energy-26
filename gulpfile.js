@@ -16,14 +16,13 @@ const sync = require("browser-sync").create();
 // Styles
 
 const styles = () => {
-return gulp.src("source/less/style.less")
+return gulp
+.src("source/less/style.less")
 .pipe(plumber())
 .pipe(sourcemap.init())
 .pipe(less())
-.pipe(postcss([
-autoprefixer(),
-csso()
-]))
+.pipe(gulp.dest("build/css"))
+.pipe(postcss([autoprefixer(),csso()]))
 .pipe(rename("style.min.css"))
 .pipe(sourcemap.write("."))
 .pipe(gulp.dest("build/css"))
@@ -43,6 +42,7 @@ return gulp.src("source/*.html")
 
 const scripts = () => {
 return gulp.src("source/js/script.js")
+.pipe(gulp.dest("build/js"))
 .pipe(terser())
 .pipe(rename("script.min.js"))
 .pipe(gulp.dest("build/js"))

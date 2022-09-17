@@ -12,10 +12,10 @@
   <body class="page-body">
 
     <svg style="display: none;">
-      <symbol viewBox="0 0 19 20" id="email">
+      <symbol viewBox="0 0 19 20" id="email-svg">
         <path d="m10 14-9-7v-2.5h18v2.5zm8-8.5h-16v1l8 6.2 8-6.2zm-17 4v8h18v-8h-1v7h-16v-7z"/>
       </symbol>
-      <symbol viewBox="0 0 20 20" id="phone">
+      <symbol viewBox="0 0 20 20" id="phone-svg">
         <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.1-.9.9 2.1 2ZM8.1 19.4v-6.2a.65.65 0 0 0-.6-.6H3.1a1.22 1.22 0 0 0 1.2 1.2h2.5v5H3.1a1.789 1.789 0 0 1-1.9-1.7v-14a1.77 1.77 0 0 1 1.7-1.8h3.9v5H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.6a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 2.9v13.9a2.89 2.89 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z"/>
       </symbol>
       <symbol viewBox="0 0 27 17" id="vk">
@@ -81,7 +81,7 @@
             <ul class="pet__list">
               <li class="pet__item">
                 <label class="pet__label form-label" for="name">Имя:*</label>
-                <input class="pet__field" type="text" id="name" name="name" placeholder="Барсик" required>
+                <input class="pet__field pet__field--error" type="text" id="name" name="name" placeholder="Барсик" required>
               </li>
               <li class="pet__item">
                 <label class="pet__label form-label" for="weight">Вес (кг):*</label>
@@ -125,23 +125,24 @@
           <ul class="owner-contacts__list">
             <li class="owner-contacts__item owner-contacts__item--email">
               <label class="owner-contacts__label form-label" for="email">E-mail:*</label>
-              <input class="owner-contacts__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <input class="owner-contacts__field owner-contacts__field--error" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               <svg class="owner-contacts__email" aria-hidden="true" width="19" height="16">
-                <use href="#email"></use>
+                <use href="#email-svg"></use>
               </svg>
             </li>
             <li class="owner-contacts__item owner-contacts__item--phone">
               <label class="owner-contacts__label form-label" for="phone">Телефон:*</label>
-              <input class="owner-contacts__field" type="tel" id="phone" name="phone_number" placeholder="8 (960) 900-60-90" required>
+              <input class="owner-contacts__field owner-contacts__field--error" type="tel" id="phone" name="phone_number" placeholder="8 (960) 900-60-90" required>
               <svg class="owner-contacts__phone" aria-hidden="true" width="20" height="20">
-                <use href="#phone"></use>
+                <use href="#phone-svg"></use>
               </svg>
             </li>
           </ul>
         </section>
         <section class="owner-comment">
-            <label class="owner-comment__title" for="owner-comment">Комментарий</label>
-            <textarea class="owner-comment__field" type="textarea" id="owner-comment" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <h3 class="visually-hidden">Комментарий</h3>
+          <label class="owner-comment__title" for="owner-comment">Комментарий</label>
+          <textarea class="owner-comment__field" id="owner-comment" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </section>
         <div class="program-selection-form__additionally">
           <section class="additionally">
@@ -185,7 +186,7 @@
       </form>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__address address">
+      <div class="main-footer__address address address--grey">
         <h2 class="visually-hidden">Адрес компаниии.</h2>
         <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
         <address class="address__text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
@@ -201,7 +202,7 @@
           </a>
         </div>
         <div class="footer-content__social social">
-          <h3 class="visually-hidden">Социальные сети.</h2>
+          <h3 class="visually-hidden">Социальные сети.</h3>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -213,7 +214,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__icon"width="24" height="19">
+                <svg class="social__icon" width="24" height="19">
                   <use href="#youtube"></use>
                 </svg>
                 <span class="visually-hidden">youtube.</span>
@@ -230,7 +231,7 @@
           </ul>
         </div>
         <div class="footer-content__copyright copyright">
-          <h3 class="visually-hidden">Разработано.</h2>
+          <h3 class="visually-hidden">Разработано.</h3>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>HTML Academy</span>
             <svg class="copyright__logo" aria-hidden="true" width="27" height="34">

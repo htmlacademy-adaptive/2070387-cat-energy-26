@@ -129,6 +129,17 @@
     margin-top: 242px;
     background-color: #eaeaea;
   }
+
+  .slider__background::before {
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    bottom: 0;
+    height: 462px;
+    width: 100vw;
+    background-color: #eaeaea;
+    z-index: -1;
+  }
 }
 
 @media (min-width: @desktop-width) {

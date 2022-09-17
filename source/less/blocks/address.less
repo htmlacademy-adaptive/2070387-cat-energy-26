@@ -6,6 +6,7 @@
 
 .address--grey {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .address__description {
@@ -39,6 +40,17 @@
     min-height: 200px;
   }
 
+  .address--grey::before {
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #f2f2f2;
+    z-index: -1;
+  }
+
   .address__description {
     font-size: 20px;
     line-height: 26px;
@@ -58,6 +70,10 @@
     margin: 0;
     padding: 0 80px;
     background-color: #ffffff;
+  }
+
+  .address--grey::before {
+    display: none;
   }
 
   .address__text {

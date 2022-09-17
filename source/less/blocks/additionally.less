@@ -10,6 +10,17 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  position: relative;
+}
+
+.additionally__title::after {
+  content: "";
+  position: absolute;
+  left: 164px;
+  top: 16px;
+  width: 136px;
+  height: 2px;
+  background-color: #68b738;
 }
 
 .additionally__list {
@@ -80,6 +91,23 @@
   .additionally__title {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .additionally__title::after {
+    left: 252px;
+    top: 22px;
+    width: 100vw;
+  }
+
+  .additionally__title::before {
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    top: 22px;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
   }
 
   .additionally__label {

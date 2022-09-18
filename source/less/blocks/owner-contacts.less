@@ -91,21 +91,18 @@
     line-height: 36px;
   }
 
-  .owner-contacts__title::after {
-    left: 553px;
-    top: 22px;
-    width: 100vw;
+  .owner-contacts__title-box {
+    background-color: #ffffff;
+    padding: 0 40px;
+    margin-left: -40px;
+    z-index: 1;
+    position: relative;
   }
 
-  .owner-contacts__title::before {
-    content: "";
-    position: absolute;
+  .owner-contacts__title::after {
     left: calc((100vw - 100%) / -2);
-    top: 22px;
+    top: 50%;
     width: 100vw;
-    height: 2px;
-    background-color: #68b738;
-    z-index: -1;
   }
 
   .owner-contacts__field {

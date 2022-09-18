@@ -56,21 +56,18 @@
     line-height: 36px;
   }
 
-  .owner-comment__title::after {
-    left: 220px;
-    top: 30px;
-    width: 100vw;
+  .owner-comment__title-box {
+    background-color: #ffffff;
+    padding: 0 40px;
+    margin-left: -40px;
+    z-index: 1;
+    position: relative;
   }
 
-  .owner-comment__title::before {
-    content: "";
-    position: absolute;
+  .owner-comment__title::after {
     left: calc((100vw - 100%) / -2);
-    top: 30px;
+    top: 50%;
     width: 100vw;
-    height: 2px;
-    background-color: #68b738;
-    z-index: -1;
   }
 
   .owner-comment__field {

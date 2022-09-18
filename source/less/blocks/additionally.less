@@ -93,21 +93,18 @@
     line-height: 36px;
   }
 
-  .additionally__title::after {
-    left: 252px;
-    top: 22px;
-    width: 100vw;
+  .additionally__title-box {
+    background-color: #ffffff;
+    padding: 0 40px;
+    margin-left: -40px;
+    z-index: 1;
+    position: relative;
   }
 
-  .additionally__title::before {
-    content: "";
-    position: absolute;
+  .additionally__title::after {
     left: calc((100vw - 100%) / -2);
-    top: 22px;
+    top: 50%;
     width: 100vw;
-    height: 2px;
-    background-color: #68b738;
-    z-index: -1;
   }
 
   .additionally__label {

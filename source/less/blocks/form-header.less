@@ -1,21 +1,21 @@
 .form-header {
   margin: 0;
-  padding: 26px 20px 40px;
+  padding: 26px 20px 38px;
 }
 
 .form-header__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 37px;
 }
 
 .form-header__description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -29,13 +29,15 @@
 @media (min-width: @tablet-width) {
   .form-header {
     width: 628px;
-    margin: 0 auto;
+    margin: 0 auto 66px;
     padding: 0;
   }
 
   .form-header__title {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 33px;
+    padding-bottom: 54px;
   }
 
   .form-header__description {
@@ -48,6 +50,10 @@
 @media (min-width: @desktop-width) {
   .form-header {
     width: 1220px;
-    margin: 0 auto;
+    margin: 0 auto 67px;
+  }
+
+  .form-header__title {
+    padding-top: 20px;
   }
 }

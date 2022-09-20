@@ -6,10 +6,11 @@
 
 .address--grey {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .address__description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -39,15 +40,28 @@
     min-height: 200px;
   }
 
+  .address--grey::before {
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #f2f2f2;
+    z-index: -1;
+  }
+
   .address__description {
     font-size: 20px;
     line-height: 26px;
+    min-width: 156px;
   }
 
   .address__text {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    min-width: 156px;
   }
 }
 
@@ -58,6 +72,10 @@
     margin: 0;
     padding: 0 80px;
     background-color: #ffffff;
+  }
+
+  .address--grey::before {
+    display: none;
   }
 
   .address__text {

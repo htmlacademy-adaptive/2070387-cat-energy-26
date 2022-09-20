@@ -8,18 +8,18 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("..//..//img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: 320px 301px;
   }
 }
 
 .program-selection__green-box {
   background-color: rgba(104, 183, 56, 0.85);
   min-height: 275px;
-  padding-top: 28px;
+  padding-top: 26px;
 }
 
 .program-selection__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -31,7 +31,7 @@
 }
 
 .program-selection__tagline {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -39,7 +39,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  padding: 26px;
+  padding: 24px;
   margin: 0;
 }
 
@@ -73,6 +73,7 @@
     background-color: #ffffff;
     padding: 0;
     margin: 0;
+    min-height: 210px;
   }
 
   .program-selection__title {
@@ -82,9 +83,7 @@
     width: 416px;
     text-align: left;
     padding: 0;
-    margin-top: 62px;
-    margin-bottom: 42px;
-    margin-left: 88px;
+    margin: 32px 0 41px 87px;
     order: 1;
   }
 
@@ -94,7 +93,7 @@
     line-height: 20px;
     text-align: left;
     padding: 0;
-    margin-left: 88px;
+    margin-left: 89px;
     order: 2;
   }
 
@@ -103,7 +102,7 @@
     height: 610px;
     background-image: url("..//..//img/can-tablet.png");
     margin: 0;
-    margin-top: -78px;
+    margin-top: -82px;
     order: 4;
 
     @media (min-resolution: 2dppx) {
@@ -118,6 +117,10 @@
     width: 244px;
     order: 3;
     z-index: 1;
+    font-size: 20px;
+    line-height: 20px;
+    height: 54px;
+    padding-top: 18px;
   }
 }
 
@@ -132,29 +135,26 @@
   .program-selection::before {
     position: absolute;
     content: "";
-    width: 50%;
+    width: 50vw;
     height: 694px;
-    right: 0;
-    top: -108px;
-    background-image: linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)),
-      url("..//..//img/index-background-desktop.jpg");
+    left: 50%;
+    top: -167px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/index-background-desktop.jpg");
     z-index: -1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)),
-        url("..//..//img/index-background-desktop@2x.png");
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index-background-desktop@2x.png");
     }
   }
 
   .program-selection__title {
     margin-left: 190px;
+    margin-top: 55px;
   }
 
   .program-selection__tagline {
@@ -163,6 +163,7 @@
 
   .program-selection__button {
     margin-left: 190px;
+    margin-top: 50px;
   }
 
   .program-selection__img {
@@ -170,7 +171,8 @@
     height: 500px;
     background-image: url("..//..//img/can-desktop.png");
     position: absolute;
-    left: 600px;
+    left: 559px;
+    top: -28px;
     margin-top: 0;
 
     @media (min-resolution: 2dppx) {

@@ -1,7 +1,6 @@
 .pet {
   margin: 0;
-  padding: 0 20px 24px;
-  padding-bottom: 24px;
+  padding: 0 20px 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -21,13 +20,13 @@
 
 .pet__item:not(:last-child) {
   margin: 0;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .pet__field {
-  height: 46px;
+  height: 43px;
   border: 1px solid #e7e7e7;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -35,8 +34,18 @@
   text-transform: uppercase;
   color: #444444;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.pet__field::-webkit-outer-spin-button,
+.pet__field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.pet__field[type="number"] {
+  appearance: textfield;
 }
 
 .pet__label {
@@ -45,11 +54,11 @@
 }
 
 .pet__field:hover {
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
 }
 
 .pet__field:focus {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
 
@@ -57,5 +66,28 @@
   .pet {
     padding: 0;
     border: none;
+    margin-bottom: 74px;
+  }
+
+  .pet__label {
+    margin-right: 19px;
+  }
+
+  .pet__field {
+    height: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 16px;
+    padding-right: 14px;
+  }
+
+  .pet__item:not(:last-child) {
+    padding-bottom: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pet {
+    margin-bottom: 71px;
   }
 }

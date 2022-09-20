@@ -1,17 +1,18 @@
 .instructions {
   background-color: #ffffff;
-  padding: 0 20px 50px 20px;
+  padding: 0 20px 42px;
   margin: 0;
 }
 
 .instructions__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
 }
 
@@ -27,7 +28,7 @@
 .instructions__description--first,
 .instructions__description--second,
 .instructions__description--third,
-.instructions__description--fourth  {
+.instructions__description--fourth {
   display: none;
 }
 
@@ -104,19 +105,22 @@
 @media (min-width: @tablet-width) {
   .instructions {
     width: 708px;
-    margin: 0 auto;
+    margin: 0 auto 43px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .instructions__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 
   .instructions__list {
     display: grid;
     grid-template-columns: 230px 230px;
     column-gap: 154px;
+    row-gap: 91px;
   }
 
   .instructions__item {
@@ -126,6 +130,16 @@
 
   .instructions__item::before {
     top: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .instructions__item--leaf::after,
+  .instructions__item--boiling::after,
+  .instructions__item--cutlery::after,
+  .instructions__item--scales::after {
+    top: 26px;
+    left: 26px;
   }
 
   .instructions__description {
@@ -133,6 +147,7 @@
     line-height: 24px;
     position: relative;
     z-index: 2;
+    margin-top: 30px;
   }
 
   .instructions__description--first,
@@ -149,7 +164,22 @@
     margin: 0;
     padding: 0;
     top: -40px;
-    right: 0;
+  }
+
+  .instructions__description--first {
+    right: 6px;
+  }
+
+  .instructions__description--second {
+    right: -14px;
+  }
+
+  .instructions__description--third {
+    right: -17px;
+  }
+
+  .instructions__description--fourth {
+    right: -19px;
   }
 }
 
@@ -157,8 +187,9 @@
   .instructions {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 82px;
     padding: 0;
+    border: none;
   }
 
   .instructions__list {
@@ -169,5 +200,9 @@
 
   .instructions__title {
     margin-bottom: 72px;
+  }
+
+  .instructions__description {
+    width: 250px;
   }
 }

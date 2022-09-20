@@ -1,6 +1,6 @@
 .program-goal {
   margin: 0;
-  padding: 28px 20px 26px;
+  padding: 28px 19px 20px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -11,17 +11,56 @@
 }
 
 .program-goal__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  position: relative;
+  padding-left: 46px;
 }
 
 .program-goal__item:not(:last-child) {
   padding-bottom: 24px;
+}
+
+.program-goal__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: 1px solid #cdcdcd;
+  left: 0;
+  top: -2px;
+}
+
+.program-goal__label:hover .program-goal__mark {
+  outline: 1px solid #bababa;
+}
+
+.program-goal__choise:disabled + .program-goal__mark {
+  outline: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.program-goal__mark::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
+}
+
+.program-goal__choise[type="radio"]:checked + .program-goal__mark::before {
+  background-color: #68b738;
+}
+
+.program-goal__choise:focus + .program-goal__mark {
+  outline: 2px solid #000000;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,5 +68,32 @@
     padding: 30px 40px;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
+    margin-bottom: 70px;
+  }
+
+  .program-goal__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 48px;
+  }
+
+  .program-goal__mark {
+    width: 40px;
+    height: 40px;
+    left: -12px;
+    top: -7px;
+  }
+
+  .program-goal__mark::before {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-goal {
+    margin-bottom: 60px;
   }
 }

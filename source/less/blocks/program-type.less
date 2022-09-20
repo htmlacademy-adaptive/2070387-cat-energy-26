@@ -13,7 +13,7 @@
 }
 
 .programm-type__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -46,7 +46,7 @@
   width: 36px;
   height: 50px;
   left: -62px;
-  top: -4px;
+  top: -6px;
 }
 
 .programm-type__title--pro::after {
@@ -56,8 +56,8 @@
   background-repeat: no-repeat;
   width: 68px;
   height: 28px;
-  left: -80px;
-  top: 10px;
+  left: -79px;
+  top: 6px;
 }
 
 .programm-type__description {
@@ -68,8 +68,10 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 18px;
   padding: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programm-type__list {
@@ -79,7 +81,7 @@
 }
 
 .programm-type__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -91,24 +93,37 @@
   position: relative;
 }
 
-.programm-type__link:active {
-  opacity: 0.6;
-}
-
 .programm-type__link::after {
   content: "";
   position: absolute;
   background-image: url("..//img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: -8px;
   width: 24px;
   height: 12px;
   left: 102px;
   top: 6px;
 }
 
+.programm-type__link:hover::after {
+  width: 32px;
+  background-position-x: 0;
+}
+
+.programm-type__link:active {
+  opacity: 0.3;
+}
+
+.programm-type__link:active::after {
+  width: 32px;
+  background-position-x: 0;
+}
+
 @media (min-width: @tablet-width) {
   .programm-type {
     width: 708px;
-    margin: 0 auto;
+    margin: 0 auto 44px;
+    padding: 0 20px;
   }
 
   .programm-type__item {
@@ -153,6 +168,8 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 52px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   .programm-type__link {
@@ -170,7 +187,7 @@
   .programm-type {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     padding: 0;
   }
 
@@ -187,7 +204,7 @@
   .programm-type__title {
     margin: 0;
     padding: 0;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
     margin-left: 162px;
   }
 
@@ -208,7 +225,8 @@
   }
 
   .programm-type__description {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
+    width: 480px;
   }
 
   .programm-type__item:not(:last-child) {

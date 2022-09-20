@@ -89,9 +89,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .additionally {
+    padding-bottom: 60px;
+  }
+
   .additionally__title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 62px;
   }
 
   .additionally__title-box {
@@ -104,7 +109,7 @@
 
   .additionally__title::after {
     left: calc((100vw - 100%) / -2);
-    top: 50%;
+    top: 22px;
     width: 100vw;
   }
 
@@ -117,10 +122,27 @@
     display: grid;
     grid-template-columns: 220px 220px;
     column-gap: 124px;
+    row-gap: 42px;
+  }
+
+  .additionally__item {
+    padding-left: 60px;
   }
 
   .additionally__item:not(:last-child) {
     padding-bottom: 0;
+  }
+
+  .additionally__mark {
+    width: 39px;
+    height: 39px;
+    left: -59px;
+    top: -5px;
+  }
+
+  .additionally__mark::before {
+    top: 11px;
+    left: 8px;
   }
 }
 

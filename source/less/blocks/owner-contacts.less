@@ -39,11 +39,7 @@
   align-items: center;
 }
 
-.owner-contacts__email {
-  position: absolute;
-  right: 16px;
-}
-
+.owner-contacts__email,
 .owner-contacts__phone {
   position: absolute;
   right: 16px;
@@ -83,13 +79,14 @@
 @media (min-width: @tablet-width) {
   .owner-contacts {
     width: 628px;
-    margin: 0 auto;
+    margin: 0 auto 65px;
     padding: 0;
   }
 
   .owner-contacts__title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 76px;
   }
 
   .owner-contacts__title-box {
@@ -109,6 +106,26 @@
   .owner-contacts__field {
     font-size: 20px;
     line-height: 30px;
+    height: 49px;
+    padding-left: 20px;
+  }
+
+  .owner-contacts__item:not(:last-child) {
+    padding-bottom: 19px;
+  }
+
+  .owner-contacts__label {
+    margin-right: 20px;
+  }
+
+  .owner-contacts__label--phone {
+    margin-right: 15px;
+  }
+
+  .owner-contacts__email,
+  .owner-contacts__phone {
+    right: 14px;
+    top: 14px;
   }
 }
 

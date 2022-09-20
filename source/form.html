@@ -12,7 +12,7 @@
   <body class="page-body">
 
     <svg style="display: none;">
-      <symbol viewBox="0 0 19 20" id="email-svg">
+      <symbol viewBox="0 0 19 16" id="email-svg">
         <path d="m10 14-9-7v-2.5h18v2.5zm8-8.5h-16v1l8 6.2 8-6.2zm-17 4v8h18v-8h-1v7h-16v-7z"/>
       </symbol>
       <symbol viewBox="0 0 20 20" id="phone-svg">
@@ -128,12 +128,12 @@
             <li class="owner-contacts__item owner-contacts__item--email">
               <label class="owner-contacts__label form-label" for="email">E-mail:*</label>
               <input class="owner-contacts__field owner-contacts__field--error" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="owner-contacts__email" aria-hidden="true" width="19" height="16">
+              <svg class="owner-contacts__email" aria-hidden="true" width="19" height="20">
                 <use href="#email-svg"></use>
               </svg>
             </li>
             <li class="owner-contacts__item owner-contacts__item--phone">
-              <label class="owner-contacts__label form-label" for="phone">Телефон:*</label>
+              <label class="owner-contacts__label owner-contacts__label--phone form-label" for="phone">Телефон:*</label>
               <input class="owner-contacts__field owner-contacts__field--error" type="tel" id="phone" name="phone_number" placeholder="8 (960) 900-60-90" required>
               <svg class="owner-contacts__phone" aria-hidden="true" width="20" height="20">
                 <use href="#phone-svg"></use>

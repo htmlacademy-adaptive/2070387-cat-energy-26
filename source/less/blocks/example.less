@@ -48,6 +48,25 @@
     width: 702px;
     margin-bottom: 34px;
   }
+
+  .example__slider-background {
+    width: 768px;
+    margin-left: -30px;
+    height: 462px;
+    margin-top: 215px;
+    background-color: #eaeaea;
+  }
+
+  .example__slider-background::before {
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    bottom: 0;
+    height: 462px;
+    width: 100vw;
+    background-color: #eaeaea;
+    z-index: -1;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -89,5 +108,9 @@
   .example__description {
     width: 436px;
     margin-bottom: 50px;
+  }
+
+  .example__slider-background {
+    display: none;
   }
 }

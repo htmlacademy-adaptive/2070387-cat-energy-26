@@ -121,35 +121,12 @@
     left: 10px;
     top: 28px;
   }
-
-  .slider__background {
-    width: 768px;
-    margin-left: -30px;
-    height: 462px;
-    margin-top: 215px;
-    background-color: #eaeaea;
-  }
-
-  .slider__background::before {
-    content: "";
-    position: absolute;
-    left: calc((100vw - 100%) / -2);
-    bottom: 0;
-    height: 462px;
-    width: 100vw;
-    background-color: #eaeaea;
-    z-index: -1;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .slider {
     top: 0;
     left: 660px;
-  }
-
-  .slider__background {
-    display: none;
   }
 
   .slider__control {

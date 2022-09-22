@@ -33,8 +33,9 @@
   .site-list {
     flex-direction: row;
     min-width: 443px;
+    max-width: 450px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     position: static;
   }
 
@@ -43,6 +44,10 @@
     width: auto;
     padding: 0;
     margin: 0;
+  }
+
+  .site-list__item:not(:last-child) {
+    margin-right: 36px;
   }
 
   .site-list__link {
@@ -73,6 +78,7 @@
 @media (min-width: @desktop-width) {
   .site-list {
     min-width: 478px;
+    max-width: 600px;
     background-color: rgba(104, 183, 56, 0);
   }
 
